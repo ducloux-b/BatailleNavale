@@ -1,0 +1,29 @@
+<style>
+.battlefield{
+	border:1px solid black;
+	border-collapse: collapse;
+}
+.tdBattlefield{
+	height: 1.5em;
+	width: 1.5em;
+}
+
+</style>
+
+<table class="battlefield">
+	<tr ng-repeat="row in prepareCtrl.rows track by $index" class="battlefield">
+		<td ng-repeat="col in prepareCtrl.cols track by $index" class="battlefield tdBattlefield" ng-click="prepareCtrl.add($index,$parent.$index)">{{prepareCtrl.battlefield[$index][$parent.$index]}}</td><!--on accede à la propriété $index du ng parent-->
+	</tr>
+</table>
+<!--<button ng-click="">Reset</button>-->
+<button ng-show="prepareCtrl.checkReady()" ng-click="prepareCtrl.save()">Sauvegarder</button>
+<button ng-click="prepareCtrl.reset()">Reset</button>
+
+<pre>{{prepareCtrl.game|json}}</pre>
+<pre>{{prepareCtrl.boats|json}}</pre>
+<!--
+<pre>width:{{prepareCtrl.game.battlefieldSize.width|json}}</pre>
+<pre>height:{{prepareCtrl.game.battlefieldSize.height|json}}</pre>
+<pre>{{prepareCtrl.rows|json}}</pre>
+<pre>{{prepareCtrl.cols|json}}</pre>
+--> 
