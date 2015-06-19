@@ -4,7 +4,7 @@ angular.module("app")
 	return {
 		pseudo: "benoit",
 		//apiUrl: "http://192.168.229.21:3000/games",
-		apiUrl: "http://localhost:3000",
+		apiUrl: "http://localhost:3000/games",
 		getAll : function(){
 			var res = $http({
 				method: "GET",
@@ -17,8 +17,7 @@ angular.module("app")
 						resultModifie[i].name = angular.uppercase(resultModifie[i].name);
 					};*/
 					return(resultModifie);
-				})
-			.then(function(games){
+				}).then(function(games){
 				return games.filter(function(game){
 					return !game.user2 ||
 					(game.user1.pseudo === this.pseudo
