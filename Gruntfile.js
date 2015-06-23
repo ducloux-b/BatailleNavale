@@ -82,7 +82,7 @@ module.exports=function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-karma');
+	grunt.loadNpmTasks('grunt-karma');//lancer par "grunt karma"
 
 	//Task par défaut (appelée par "grunt")
 	grunt.registerTask('default','hello');

@@ -5,6 +5,7 @@ angular.module("app")
 		pseudo: "benoit",
 		//apiUrl: "http://192.168.229.21:3000/games",
 		apiUrl: "http://localhost:3000/games",
+		version:"0.0.1",
 		getAll : function(){
 			var res = $http({
 				method: "GET",
@@ -51,10 +52,6 @@ angular.module("app")
 					return resData;
 				})
 			return res;
-		},
-
-		prepare : function(game){
-
 		}
 
 		}

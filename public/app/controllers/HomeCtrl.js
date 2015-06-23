@@ -1,4 +1,4 @@
-angular.module("app").controller('HomeCtrl',function(RequestService,$scope,$location){
+angular.module("app").controller('HomeCtrl',function(RequestService,$location){
 	var homeCtrl=this;
 
 	function fetchGames() {
