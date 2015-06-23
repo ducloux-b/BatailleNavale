@@ -1,0 +1,21 @@
+{
+  "name": "ProjetBatailleNavale",
+  "version": "0.0.1",
+  "authors": [
+    "ducloux-b <duclouxbenoit@gmail.com>"
+  ],
+  "description": "Bower to your king!",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "1.3.16",
+    "angular-route": "1.3.16",
+    "bootstrap": "~3.3.5"
+  }
+}

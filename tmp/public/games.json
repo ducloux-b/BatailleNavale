@@ -1,0 +1,20 @@
+{
+  "games": [
+    {
+      "fleetSize": 2,
+      "name": "aaa",
+      "user1": {
+        "email": "a@a.a",
+        "pseudo": "benoit"
+      },
+      "battlefieldSize": {
+        "width": 4,
+        "height": 5
+      },
+      "id": 1,
+      "user2": {
+        "pseudo": "benoit"
+      }
+    }
+  ]
+}
