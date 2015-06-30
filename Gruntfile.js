@@ -34,9 +34,9 @@ module.exports=function(grunt){
 				{
 					expand: true,
 					flatten:true,
-					src:['bower_components/**/angular.min.js',
-					'bower_components/**/bootstrap.min.js',
-					'bower_components/**/angular-route.min.js'],
+					src:['bower_components/**/angular.js',
+					'bower_components/**/bootstrap.js',
+					'bower_components/**/angular-route.js'],
 					dest:'tmp/public/lib'
 				}]
 			}
