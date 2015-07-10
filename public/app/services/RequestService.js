@@ -4,7 +4,7 @@ angular.module("app")
 	return {
 		pseudo: "benoit",
 		//apiUrl: "http://192.168.229.21:3000/games",
-		apiUrl: "http://localhost:3000/games",
+		apiUrl: "app/requests/getBatailles.php",
 		version:"0.0.1",
 		getAll : function(){
 			var res = $http({
@@ -14,6 +14,7 @@ angular.module("app")
 				function(result){
 					console.log("success RequestsService",result);
 					var resultModifie = angular.copy(result.data);
+					console.log("resultModifie",resultModifie);
 					/*for (var i = resultModifie.length - 1; i >= 0; i--) {
 						resultModifie[i].name = angular.uppercase(resultModifie[i].name);
 					};*/

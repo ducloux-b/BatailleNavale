@@ -9,15 +9,16 @@
 </style>
 <table>
 	<tr>
-		<td scope="col">game.id</td>
-		<td scope="col">name</td>
-		<td scope="col">user1.email</td>
+		<td scope="col">nom_partie</td>
+		<td scope="col">j1_nom_joueur</td>
+		<td scope="col">j2_nom_joueur</td>
 	</tr>
 	<tr ng-repeat="game in homeCtrl.games track by $index">
-			<td>{{game.id}}</td>
-			<td>{{game.name}}</td>
-			<td>{{game.user1.pseudo}}</td>
-			<td>{{game.user2.pseudo}}</td>
+			<td>{{game.nom_partie}}</td>
+			<td>{{game.j1_nom_joueur}}</td>
+			<td>{{game.j2_nom_joueur}}</td>
 			<td><button ng-if="!game.user2" ng-click="homeCtrl.join(game)" type="submit">Participer</button><button ng-if="game.user2" ng-click="homeCtrl.prepare(game)">Jouer</button></td>
 		</tr>
+
+		
 </table>
